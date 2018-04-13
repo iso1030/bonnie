@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Bonnie's Home</title>
+  <meta name="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="Bonnie">
+  <meta name="description" content="Bonnie's personal website">
+  <meta name="keywords" content="bonnie">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+  <!-- cdnjs -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/6.7.3/video-js.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/6.7.3/video.js"></script>
+  <style type="text/css">
+  .container {
+    width: 800px;
+    margin: 20px auto;
+  }
+  .v-box {
+    width: 320px;
+    height: 240px;
+  }
+  .v-box.p {
+    float: left;
+  }
+  .v-box.c {
+    float: right;
+  }
+  </style>
+</head>
+<body class="bonnie">
+<div id="container" class="container">
+  <div class="v-box p">
+    <video
+        id="chilies-player"
+        class="video-js"
+        controls
+        preload="auto"
+        data-setup='{}'>
+      <source src="http://oy02t7ssb.bkt.clouddn.com/chilies-lower.mp4?v=1804081534" type="video/mp4"></source>
+      <source src="http://oy02t7ssb.bkt.clouddn.com/chilies-lower.ogg?v=1804081534" type="video/ogg"></source>
+      <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a
+        web browser that
+        <a href="http://videojs.com/html5-video-support/" target="_blank">
+          supports HTML5 video
+        </a>
+      </p>
+    </video>
+  </div>
+  <div class="v-box c">
+    <video
+        id="powerup-player"
+        class="video-js"
+        controls
+        preload="auto"
+        data-setup='{}'>
+      <source src="http://oy02t7ssb.bkt.clouddn.com/power-up-lower.mp4?v=1804081534" type="video/mp4"></source>
+      <source src="http://oy02t7ssb.bkt.clouddn.com/power-up-lower.ogg?v=1804081534" type="video/ogg"></source>
+      <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a
+        web browser that
+        <a href="http://videojs.com/html5-video-support/" target="_blank">
+          supports HTML5 video
+        </a>
+      </p>
+    </video>
+  </div>
+</div>
+<script type="text/javascript">
+var player1 = videojs('chilies-player');
+var player2 = videojs('powerup-player');
+</script>
+</body>
+</html>

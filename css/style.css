@@ -1,0 +1,52 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.header {
+  padding-top: 75px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ddd; 
+}
+.header .nav {
+  align-items: center;
+}
+.header .nav a,
+.header .nav a:hover,
+.header .nav a:visited {
+  color: #999;
+  text-decoration: none;
+}
+.header .nav a.active {
+  color: #222;
+}
+.header .logo {
+  text-align: right;
+  font-size: 40px;
+  font-weight: normal;
+  letter-spacing: 0.025em;
+  line-height: 1.2em;
+}
+.header .logo a,
+.header .logo a:hover,
+.header .logo a:visited {
+  color: #222;
+  text-decoration: none;
+}
+
+.banner {
+  margin: 50px 0;
+}
+
+.footer {
+  padding-top: 50px;
+  margin: 50px 0 100px;
+  border-top: 1px solid #ddd;
+}
+.footer a,
+.footer a:hover,
+.footer a:visited {
+  color: #222;
+}
