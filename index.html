@@ -144,10 +144,15 @@
       var sources = videos[$parent.index()];
       console.log(sources);
       var str = [];
-      str.push('<video class="video-js" id="my-video" controls="controls" autoplay="autoplay" style="width:100%;height:100%;">');
-      str.push('<source id="my-video-mp4" src="' + sources.mp4 + '" type="video/mp4"></source>');
-      str.push('<source id="my-video-mp4" src="' + sources.ogg + '" type="video/mp4"></source>');
-      str.push('</video>');
+      if (/Safari\//.test(navigator.userAgent)) {
+        str.push('<video class="video-js" id="my-video" controls="controls" autoplay="autoplay" style="width:100%;height:100%;" src="' + sources.mp4 + '">');
+        str.push('</video>');
+      } else {
+        str.push('<video class="video-js" id="my-video" controls="controls" autoplay="autoplay" style="width:100%;height:100%;">');
+        str.push('<source id="my-video-mp4" src="' + sources.mp4 + '" type="video/mp4"></source>');
+        str.push('<source id="my-video-mp4" src="' + sources.ogg + '" type="video/mp4"></source>');
+        str.push('</video>');
+      }
       $('#fullscreen .box').html(str.join(''));
       // $('#my-video-mp4').attr('src', sources.mp4);
       // $('#my-video-ogg').attr('src', sources.ogg);
