@@ -10,12 +10,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" href="./favicon.ico">
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://oy02t7ssb.bkt.clouddn.com/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/style.css">
-  <!-- Fontawesome CSS -->
-  <link rel="stylesheet" href="./css/all.css">
-  <!-- Videojs CSs -->
-  <link rel="stylesheet" href="./css/video-js.css">
 </head>
 <body class="bonnie">
   <div class="container">
@@ -28,14 +24,33 @@
       </nav>
     </header>
     <section class="banner">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+          <a href="./p.html" target="_blank" class="carousel-item active">
+            <img class="d-block w-100" src="https://desk-fd.zol-img.com.cn/t_s960x600c5/g4/M08/0C/09/Cg-4WVSBfl-IanN7AC__cIPrv8EAAR5PQMDkT8AL_-I272.jpg" alt="Power Up">
+          </a>
+          <a href="./c.html" target="_blank" class="carousel-item">
+            <img class="d-block w-100" src="https://desk-fd.zol-img.com.cn/t_s960x600c5/g5/M00/02/08/ChMkJ1bKzFWIFLWLAA5J8SETqcwAALI1QAAAAAADkoJ782.jpg" alt="Chilies">
+          </a>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!--
       <div class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <a href="./p.html" target="_blank" class="carousel-item active">
             <img class="d-block w-100" src="https://desk-fd.zol-img.com.cn/t_s960x600c5/g4/M08/0C/09/Cg-4WVSBfl-IanN7AC__cIPrv8EAAR5PQMDkT8AL_-I272.jpg" alt="Power Up">
-          </div>
-          <div class="carousel-item">
+          </a>
+          <a href="./c.html" target="_blank" class="carousel-item">
             <img class="d-block w-100" src="https://desk-fd.zol-img.com.cn/t_s960x600c5/g5/M00/02/08/ChMkJ1bKzFWIFLWLAA5J8SETqcwAALI1QAAAAAADkoJ782.jpg" alt="Chilies">
-          </div>
+          </a>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -45,7 +60,7 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
-      </div>
+      </div>-->
     </section>
     <section class="gallery">
       <div class="row">
@@ -53,21 +68,21 @@
           <figure class="figure">
             <img src="http://oy02t7ssb.bkt.clouddn.com/v1_processing.jpeg" class="figure-img img-fluid rounded" alt="">
             <figcaption class="figure-caption text-center">Processing编程动态图像设计-1</figcaption>
-            <div class="player"><div class="player-icn"><i class="fas fa-play"></i></div></div>
+            <div class="player"><div class="player-icn"><i class="icon iconfont icon-play"></i></div></div>
           </figure>
         </div>
         <div class="col-sm-3 mb-3 video">
           <figure class="figure">
             <img src="http://oy02t7ssb.bkt.clouddn.com/v2_processing.jpeg" class="figure-img img-fluid rounded" alt="">
             <figcaption class="figure-caption text-center">Processing编程动态图像设计-2</figcaption>
-            <div class="player"><div class="player-icn"><i class="fas fa-play"></i></div></div>
+            <div class="player"><div class="player-icn"><i class="icon iconfont icon-play"></i></div></div>
           </figure>
         </div>
         <div class="col-sm-3 mb-3 video">
           <figure class="figure">
             <img src="http://oy02t7ssb.bkt.clouddn.com/v3_ae.jpeg" class="figure-img img-fluid rounded" alt="">
             <figcaption class="figure-caption text-center">AE动效设计</figcaption>
-            <div class="player"><div class="player-icn"><i class="fas fa-play"></i></div></div>
+            <div class="player"><div class="player-icn"><i class="icon iconfont icon-play"></i></div></div>
           </figure>
         </div>
         <!--
@@ -87,7 +102,9 @@
       <div class="row">
         <div class="col-sm">&copy; Fangbo Shou 2018</div>
         <div class="col-sm text-right">
-          <a href="#"><i class="fas fa-envelope"></i></a>
+          <a href="#"><i class="icon iconfont icon-mail"></i></a>
+          <a href="#"><i class="icon iconfont icon-facebook"></i></a>
+          <a href="#"><i class="icon iconfont icon-instagram"></i></a>
           <!--
           <a href="#"><i class="fas fa-instagram"></i></a>
           <a href="#"><i class="fas fa-facebook"></i></a>
@@ -99,13 +116,13 @@
   <section id="fullscreen" class="fullscreen">
     <div class="box">
     </div>
-    <div class="cls"><i class="fas fa-times-circle"></i></div>
+    <div class="cls"><i class="iconfont icon-close"></i></div>
   </section>
-  <script src="./js/jquery-3.3.1.slim.min.js"></script>
-  <script src="./js/bootstrap.min.js"></script>
-  <script src="./js/video.js"></script>
+  <script src="http://oy02t7ssb.bkt.clouddn.com/js/jquery-3.3.1.slim.min.js"></script>
+  <script src="http://oy02t7ssb.bkt.clouddn.com/js/bootstrap.min.js"></script>
   <script type="text/javascript">
   (function () {
+    $('.carousel').carousel()
     var videos = [{
       mp4: 'http://oy02t7ssb.bkt.clouddn.com/v1_processing.mp4',
       ogg: 'http://oy02t7ssb.bkt.clouddn.com/v1_processing.ogg',

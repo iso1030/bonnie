@@ -1,3 +1,31 @@
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1523635325428'); /* IE9*/
+  src: url('iconfont.eot?t=1523635325428#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff;charset=utf-8;base64,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') format('woff'),
+  url('iconfont.ttf?t=1523635325428') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1523635325428#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before { content: "\e619"; }
+
+.icon-mail:before { content: "\e6ab"; }
+
+.icon-play:before { content: "\e611"; }
+
+.icon-instagram:before { content: "\e602"; }
+
+.icon-close:before { content: "\e65d"; }
+
+
 html, body {
   margin: 0;
   padding: 0;
@@ -73,6 +101,9 @@ html, body {
   text-align: center;
   color: #fff;
 }
+.gallery .figure .icon {
+  font-size: 28px;
+}
 .gallery .figure-img {
   margin-bottom: 0;
 }
@@ -89,11 +120,19 @@ html, body {
   padding-top: 50px;
   margin: 50px 0 100px;
   border-top: 1px solid #ddd;
+  line-height: 26px;
 }
 .footer a,
 .footer a:hover,
 .footer a:visited {
   color: #222;
+  text-decoration: none;
+}
+.footer a {
+  margin: 0 3px;
+}
+.footer .icon {
+  font-size: 20px;
 }
 
 .fullscreen {
@@ -121,9 +160,12 @@ html, body {
   line-height: 40px;
   text-align: center;
   color: #fff;
-  font-size: 30px;
   cursor: pointer;
+}
+.fullscreen .cls i {
+  font-size: 30px;
 }
 .fullscreen .iframe {
   margin-top: 20px;
 }
+
