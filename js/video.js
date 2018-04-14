@@ -12369,8 +12369,10 @@ var Button = function (_ClickableComponent) {
 
     tag = 'button';
 
+    console.log();
     props = assign({
-      innerHTML: '<span aria-hidden="true" class="vjs-icon-placeholder"></span>',
+      // innerHTML: '<i aria-hidden="true" class="iconfont icon-play"></i>',
+      innerHTML: this instanceof BigPlayButton ? '<i aria-hidden="true" class="iconfont icon-play"></i>' :'<span aria-hidden="true" class="vjs-icon-placeholder"></span>',
       className: this.buildCSSClass()
     }, props);
 

@@ -10,181 +10,171 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" href="./favicon.ico">
   <link rel="stylesheet" href="http://oy02t7ssb.bkt.clouddn.com/css/bootstrap.min.css">
-  <link rel="stylesheet" href="http://oy02t7ssb.bkt.clouddn.com/css/video-js.css">
-  <link rel="stylesheet" href="./css/style.css?v=3">
+  <link rel="stylesheet" href="./css/video-js.css?v=2147">
+  <link rel="stylesheet" href="./css/style.css?v=2147">
 </head>
-<body class="bonnie">
-  <div class="container">
-    <header class="header">
-      <nav class="row nav">
-        <div class="col-2 col-lg-1"><a href="/" class="active">作品</a></div>
-        <div class="col-2 col-lg-1"><a href="/about.html">关于</a></div>
-        <h1 class="col-8 col-lg-10 logo"><a href="/">寿 芳波</a></h1>
-      </nav>
-    </header>
-    <!--
-    <section class="banner">
-      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-        <div class="carousel-inner">
-          <a href="./p.html" target="_blank" class="carousel-item active">
-            <img class="d-block w-100" src="https://desk-fd.zol-img.com.cn/t_s960x600c5/g4/M08/0C/09/Cg-4WVSBfl-IanN7AC__cIPrv8EAAR5PQMDkT8AL_-I272.jpg" alt="Power Up">
-          </a>
-          <a href="./c.html" target="_blank" class="carousel-item">
-            <img class="d-block w-100" src="https://desk-fd.zol-img.com.cn/t_s960x600c5/g5/M00/02/08/ChMkJ1bKzFWIFLWLAA5J8SETqcwAALI1QAAAAAADkoJ782.jpg" alt="Chilies">
-          </a>
+<body id="bonnie" class="bonnie">
+<div class="container">
+  <!-- 主内容区开始 -->
+  <section class="main row">
+    <article id="article" class="col-10">
+      <header class="header">
+        <h1 class="logo">Sodesign</h1>
+      </header>
+      <!-- power up -->
+      <section id="s-powerup" class="animation">
+        <figure class="figure">
+          <figcaption class="figure-caption"><a href="./p.html">Power up</a></figcaption>
+          <video id="v-powerup" class="video-js vjs-default-skin"></video>
+        </figure>
+      </section>
+      <!-- chilies -->
+      <section id="s-chilies" class="animation">
+        <figure class="figure">
+          <figcaption class="figure-caption"><a href="./c.html">Chilies</a></figcaption>
+          <video id="v-chilies" class="video-js vjs-default-skin"></video>
+        </figure>
+      </section>
+      <!-- 动效作品列表 -->
+      <section id="s-gallery" class="gallery">
+        <div class="row">
+          <div class="col-sm-4 mb-3 video">
+            <figure class="figure">
+              <video id="v0" class="v" width="100%" height="auto"
+                poster="http://oy02t7ssb.bkt.clouddn.com/v1_processing.jpeg">
+                <source src="http://oy02t7ssb.bkt.clouddn.com/v1_processing.mp4" type="video/mp4">
+                <source src="http://oy02t7ssb.bkt.clouddn.com/v1_processing.ogg" type="video/ogg">
+              </video>
+              <figcaption class="figure-caption text-center">Processing编程动态图像设计-1</figcaption>
+              <div class="player"><div class="player-icn"><i class="icon iconfont icon-play"></i></div></div>
+            </figure>
+          </div>
+          <div class="col-sm-4 mb-3 video">
+            <figure class="figure">
+              <video id="v1" class="v" width="100%" height="auto"
+                poster="http://oy02t7ssb.bkt.clouddn.com/v2_processing.jpeg">
+                <source src="http://oy02t7ssb.bkt.clouddn.com/v2_processing.mp4" type="video/mp4">
+                <source src="http://oy02t7ssb.bkt.clouddn.com/v2_processing.ogg" type="video/ogg">
+              </video>
+              <figcaption class="figure-caption text-center">Processing编程动态图像设计-2</figcaption>
+              <div class="player"><div class="player-icn"><i class="icon iconfont icon-play"></i></div></div>
+            </figure>
+          </div>
+          <div class="col-sm-4 mb-3 video">
+            <figure class="figure">
+              <video id="v2" class="v" width="100%" height="auto"
+                poster="http://oy02t7ssb.bkt.clouddn.com/v3_ae.jpeg">
+                <source src="http://oy02t7ssb.bkt.clouddn.com/v3_ae.mp4" type="video/mp4">
+                <source src="http://oy02t7ssb.bkt.clouddn.com/v3_ae.ogg" type="video/ogg">
+              </video>
+              <figcaption class="figure-caption text-center">AE动效设计</figcaption>
+              <div class="player"><div class="player-icn"><i class="icon iconfont icon-play"></i></div></div>
+            </figure>
+          </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+      </section>
+    </article>
+    <aside id="aside" class="col-2">
+      <div class="aside-box">
+        <div class="avatar"><img class="img" src="http://imgsize.ph.126.net/?imgurl=http://img0.ph.126.net/GNTJ5D3ksQ-T7pKgyyaLdw==/6631267876820875431.jpg_64x64x0x90.jpg"/></div>
+        <ul class="sidebar-nav">
+          <li class="nav-item" id="animation-nav">
+            <div><a href="#s-powerup">动画</a></div>
+            <div style="display:none;">
+              <div><a href="#s-powerup">&nbsp;&nbsp;&nbsp;&nbsp;Power Up</a></div>
+              <div><a href="#s-chilies">&nbsp;&nbsp;&nbsp;&nbsp;Chilies</a></div>
+            </div>
+          </li>
+          <li class="nav-item"><a href="#s-gallery">动效</a></li>
+        </ul>
       </div>
-    </section>-->
-    <section class="videos">
-      <div class="row">
-        <div class="col-12 col-lg-6 video">
-          <figure class="figure">
-            <video id="v-powerup" class="video-js vjs-default-skin">
-              <source src="http://oy02t7ssb.bkt.clouddn.com/power-up.mp4?v=1804081534" type="video/mp4">
-              <source src="http://oy02t7ssb.bkt.clouddn.com/power-up.ogg?v=1804081534" type="video/ogg">
-            </video>
-          </figure>
-        </div>
-        <div class="col-12 col-lg-6 video">
-          <figure class="figure">
-            <video id="v-chilies" class="video-js vjs-default-skin">
-              <source src="http://oy02t7ssb.bkt.clouddn.com/chilies.mp4?v=1804081534" type="video/mp4">
-              <source src="http://oy02t7ssb.bkt.clouddn.com/chilies.ogg?v=1804081534" type="video/ogg">
-            </video>
-          </figure>
-        </div>
-      </div>
-    </section>
-    <section class="gallery">
-      <div class="row">
-        <!--
-        <div class="col-sm-3 mb-3 video">
-          <figure class="figure">
-            <img src="http://oy02t7ssb.bkt.clouddn.com/v1_processing.jpeg" class="figure-img img-fluid rounded" alt="">
-            <figcaption class="figure-caption text-center">Processing编程动态图像设计-1</figcaption>
-            <div class="player"><div class="player-icn"><i class="icon iconfont icon-play"></i></div></div>
-          </figure>
-        </div>
-        <div class="col-sm-3 mb-3 video">
-          <figure class="figure">
-            <img src="http://oy02t7ssb.bkt.clouddn.com/v2_processing.jpeg" class="figure-img img-fluid rounded" alt="">
-            <figcaption class="figure-caption text-center">Processing编程动态图像设计-2</figcaption>
-            <div class="player"><div class="player-icn"><i class="icon iconfont icon-play"></i></div></div>
-          </figure>
-        </div>
-        <div class="col-sm-3 mb-3 video">
-          <figure class="figure">
-            <img src="http://oy02t7ssb.bkt.clouddn.com/v3_ae.jpeg" class="figure-img img-fluid rounded" alt="">
-            <figcaption class="figure-caption text-center">AE动效设计</figcaption>
-            <div class="player"><div class="player-icn"><i class="icon iconfont icon-play"></i></div></div>
-          </figure>
-        </div>-->
-        <div class="col-sm-3 mb-3 video">
-          <figure class="figure">
-            <video id="v0" class="v" width="100%" height="auto"
-              poster="http://oy02t7ssb.bkt.clouddn.com/v1_processing.jpeg">
-              <source src="http://oy02t7ssb.bkt.clouddn.com/v1_processing.mp4" type="video/mp4">
-              <source src="http://oy02t7ssb.bkt.clouddn.com/v1_processing.ogg" type="video/ogg">
-            </video>
-            <figcaption class="figure-caption text-center">Processing编程动态图像设计-1</figcaption>
-            <div class="player"><div class="player-icn"><i class="icon iconfont icon-play"></i></div></div>
-          </figure>
-        </div>
-        <div class="col-sm-3 mb-3 video">
-          <figure class="figure">
-            <video id="v1" class="v" width="100%" height="auto"
-              poster="http://oy02t7ssb.bkt.clouddn.com/v2_processing.jpeg">
-              <source src="http://oy02t7ssb.bkt.clouddn.com/v2_processing.mp4" type="video/mp4">
-              <source src="http://oy02t7ssb.bkt.clouddn.com/v2_processing.ogg" type="video/ogg">
-            </video>
-            <figcaption class="figure-caption text-center">Processing编程动态图像设计-2</figcaption>
-            <div class="player"><div class="player-icn"><i class="icon iconfont icon-play"></i></div></div>
-          </figure>
-        </div>
-        <div class="col-sm-3 mb-3 video">
-          <figure class="figure">
-            <video id="v2" class="v" width="100%" height="auto"
-              poster="http://oy02t7ssb.bkt.clouddn.com/v3_ae.jpeg">
-              <source src="http://oy02t7ssb.bkt.clouddn.com/v3_ae.mp4" type="video/mp4">
-              <source src="http://oy02t7ssb.bkt.clouddn.com/v3_ae.ogg" type="video/ogg">
-            </video>
-            <figcaption class="figure-caption text-center">AE动效设计</figcaption>
-            <div class="player"><div class="player-icn"><i class="icon iconfont icon-play"></i></div></div>
-          </figure>
-        </div>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="row">
-        <div class="col-sm">&copy; Fangbo Shou 2018</div>
-        <div class="col-sm text-right">
-          <a href="mailto:bonnieso@163.com"><i class="icon iconfont icon-mail"></i></a>
-          <a href="#"><i class="icon iconfont icon-facebook"></i></a>
-          <a href="#"><i class="icon iconfont icon-instagram"></i></a>
-        </div>
-      </div>
-    </footer>
-  </div>
-  <section id="fullscreen" class="fullscreen">
-    <div class="box">
-    </div>
-    <div class="cls"><i class="iconfont icon-close"></i></div>
+    </aside>
   </section>
-  <script src="http://oy02t7ssb.bkt.clouddn.com/js/jquery-3.3.1.slim.min.js"></script>
-  <script src="http://oy02t7ssb.bkt.clouddn.com/js/bootstrap.min.js"></script>
-  <script src="http://oy02t7ssb.bkt.clouddn.com/js/video.js"></script>
-  <script type="text/javascript">
-  (function () {
-    var videos = [{
-      mp4: 'http://oy02t7ssb.bkt.clouddn.com/v1_processing.mp4',
-      ogg: 'http://oy02t7ssb.bkt.clouddn.com/v1_processing.ogg',
-      poster: 'http://oy02t7ssb.bkt.clouddn.com/v1_processing.jpeg'
+  <!--/ 主内容区结束 -->
+  <footer class="footer">
+    <div class="row">
+      <div class="col-sm">&copy; Fangbo Shou 2018</div>
+      <div class="col-sm text-right">
+        <a href="mailto:bonnieso@163.com"><i class="icon iconfont icon-mail"></i></a>
+        <a href="#"><i class="icon iconfont icon-facebook"></i></a>
+        <a href="#"><i class="icon iconfont icon-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</div>
+<script src="http://oy02t7ssb.bkt.clouddn.com/js/jquery-3.3.1.min.js"></script>
+<script src="http://oy02t7ssb.bkt.clouddn.com/js/jquery.scrollTo.min.js"></script>
+<script src="./js/video.js?2147"></script>
+<script type="text/javascript">
+$(function() {
+
+  var $navItems = $('.nav-item a');
+  $navItems.on('click', function (e) {
+    var $target = $(e.target);
+    $.scrollTo($target.attr('href'), 500);
+  });
+
+  $('#animation-nav').hover(function () {
+    $(this).children().eq(1).slideDown();
+  }, function () {
+    $(this).children().eq(1).slideUp();
+  });
+
+  var width = $('#article').width();
+  var vPowerup = videojs(document.getElementById('v-powerup'), {
+    width: width + 'px',
+    controls: true,
+    sources: [{
+      src: 'http://oy02t7ssb.bkt.clouddn.com/power-up.mp4?v=1804081534',
+      type: 'video/mp4'
     }, {
-      mp4: 'http://oy02t7ssb.bkt.clouddn.com/v2_processing.mp4',
-      ogg: 'http://oy02t7ssb.bkt.clouddn.com/v2_processing.ogg',
-      poster: 'http://oy02t7ssb.bkt.clouddn.com/v2_processing.jpeg'
+      src: 'http://oy02t7ssb.bkt.clouddn.com/power-up.ogg?v=1804081534',
+      type: 'video/ogg'
+    }],
+    // poster: 'http://oy02t7ssb.bkt.clouddn.com/images/powerup.jpeg?v=1'
+  });
+  var vChilies = videojs(document.getElementById('v-chilies'), {
+    width: width + 'px',
+    controls: true,
+    sources: [{
+      src: 'http://oy02t7ssb.bkt.clouddn.com/chilies.mp4?v=1804081534',
+      type: 'video/mp4'
     }, {
-      mp4: 'http://oy02t7ssb.bkt.clouddn.com/v3_ae.mp4',
-      ogg: 'http://oy02t7ssb.bkt.clouddn.com/v3_ae.ogg',
-      poster: 'http://oy02t7ssb.bkt.clouddn.com/v3_ae.jpeg'
-    }]
-    var vPowerup = videojs(document.getElementById('v-powerup'), { width: '470px', controls: true });
-    var vChilies = videojs(document.getElementById('v-chilies'), { width: '470px', controls: true });
-    $('.player').on('click', function (e) {
-      var $target = $(e.currentTarget);
-      var $parent = $target.closest('.video');
-      if ($target.data('state') === 'playing') {
-        console.log('pause');
+      src: 'http://oy02t7ssb.bkt.clouddn.com/chilies.ogg?v=1804081534',
+      type: 'video/ogg'
+    }],
+    // poster: 'http://oy02t7ssb.bkt.clouddn.com/images/powerup.jpeg?v=1'
+  });
+
+  // 动效列表点击播放处理
+  $('.player').on('click', function (e) {
+    var $target = $(e.currentTarget);
+    var $parent = $target.closest('.video');
+    if ($target.data('state') === 'playing') {
+      console.log('pause');
+      $target.data('state', 'pause');
+      $('#v' + $parent.index()).get(0).pause();
+      $target.find('i').removeClass('icon-pause').addClass('icon-play');
+    } else {
+      console.log('play');
+      $target.data('state', 'playing');
+      $('#v' + $parent.index()).get(0).play();
+      $target.find('i').removeClass('icon-play').addClass('icon-pause');
+    }
+  });
+  ['v0', 'v1', 'v2'].forEach(function (item) {
+    $('#' + item).on('ended', function (e) {
+      var $video = $(e.target);
+      if ($video.get(0).ended) {
+        console.log('play ended');
+        var $target = $video.parent().find('.player');
         $target.data('state', 'pause');
-        $('#v' + $parent.index()).get(0).pause();
         $target.find('i').removeClass('icon-pause').addClass('icon-play');
-      } else {
-        console.log('play');
-        $target.data('state', 'playing');
-        $('#v' + $parent.index()).get(0).play();
-        $target.find('i').removeClass('icon-play').addClass('icon-pause');
       }
-    });
-    ['v0', 'v1', 'v2'].forEach(function (item) {
-      $('#' + item).on('ended', function (e) {
-        var $video = $(e.target);
-        if ($video.get(0).ended) {
-          console.log('play ended');
-          var $target = $video.parent().find('.player');
-          $target.data('state', 'pause');
-          $target.find('i').removeClass('icon-pause').addClass('icon-play');
-        }
-      })
     })
-  })();
-  </script>
+  });
+
+});
+</script>
 </body>
 </html>
