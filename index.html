@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Bonnie's Home</title>
+  <title>sodesign</title>
   <meta name="X-UA-Compatible" content="IE=edge">
   <meta name="author" content="Bonnie">
   <meta name="description" content="Bonnie's personal website">
@@ -11,7 +11,7 @@
   <link rel="icon" href="./favicon.ico">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="http://oy02t7ssb.bkt.clouddn.com/css/bootstrap.min.css">
-  <link rel="stylesheet" href="http://oy02t7ssb.bkt.clouddn.com/css/style.css?v=2">
+  <link rel="stylesheet" href="./css/style.css?v=3">
 </head>
 <body class="bonnie">
   <div class="container">
@@ -19,10 +19,11 @@
       <nav class="row nav">
         <div class="col-2 col-lg-1"><a href="/" class="active">作品</a></div>
         <div class="col-2 col-lg-1"><a href="/about.html">关于</a></div>
-        <div class="col-2 col-lg-1"><a href="/contact.html">联系</a></div>
+        <!-- <div class="col-2 col-lg-1"><a href="/contact.html">联系</a></div> -->
         <h1 class="col-6 col-lg-9 logo"><a href="/">寿 芳波</a></h1>
       </nav>
     </header>
+    <!--
     <section class="banner">
       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner">
@@ -42,28 +43,32 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-      <!--
-      <div class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <a href="./p.html" target="_blank" class="carousel-item active">
-            <img class="d-block w-100" src="https://desk-fd.zol-img.com.cn/t_s960x600c5/g4/M08/0C/09/Cg-4WVSBfl-IanN7AC__cIPrv8EAAR5PQMDkT8AL_-I272.jpg" alt="Power Up">
-          </a>
-          <a href="./c.html" target="_blank" class="carousel-item">
-            <img class="d-block w-100" src="https://desk-fd.zol-img.com.cn/t_s960x600c5/g5/M00/02/08/ChMkJ1bKzFWIFLWLAA5J8SETqcwAALI1QAAAAAADkoJ782.jpg" alt="Chilies">
-          </a>
+    </section>-->
+    <section class="videos">
+      <div class="row">
+        <div class="col-12 col-lg-6 mb-3 video">
+          <figure class="figure">
+            <video class="video-js" width="100%" height="auto"
+              controls="controls" autobuffer>
+              <source src="http://oy02t7ssb.bkt.clouddn.com/power-up.mp4?v=1804081534" type="video/mp4">
+              <source src="http://oy02t7ssb.bkt.clouddn.com/power-up.ogg?v=1804081534" type="video/ogg">
+            </video>
+          </figure>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>-->
+        <div class="col-12 col-lg-6 mb-3 video">
+          <figure class="figure">
+            <video class="video-js" width="100%" height="auto"
+              controls="controls" autobuffer>
+              <source src="http://oy02t7ssb.bkt.clouddn.com/chilies.mp4?v=1804081534" type="video/mp4">
+              <source src="http://oy02t7ssb.bkt.clouddn.com/chilies.ogg?v=1804081534" type="video/ogg">
+            </video>
+          </figure>
+        </div>
+      </div>
     </section>
     <section class="gallery">
       <div class="row">
+        <!--
         <div class="col-sm-3 mb-3 video">
           <figure class="figure">
             <img src="http://oy02t7ssb.bkt.clouddn.com/v1_processing.jpeg" class="figure-img img-fluid rounded" alt="">
@@ -84,18 +89,40 @@
             <figcaption class="figure-caption text-center">AE动效设计</figcaption>
             <div class="player"><div class="player-icn"><i class="icon iconfont icon-play"></i></div></div>
           </figure>
-        </div>
-        <!--
+        </div>-->
         <div class="col-sm-3 mb-3 video">
           <figure class="figure">
-            <video class="video-js" data-setup="{}" width="100%" height="auto">
+            <video id="v0" class="video-js" width="100%" height="auto"
+              poster="http://oy02t7ssb.bkt.clouddn.com/v1_processing.jpeg">
               <source src="http://oy02t7ssb.bkt.clouddn.com/v1_processing.mp4" type="video/mp4">
               <source src="http://oy02t7ssb.bkt.clouddn.com/v1_processing.ogg" type="video/ogg">
             </video>
             <figcaption class="figure-caption text-center">Processing编程动态图像设计-1</figcaption>
-            <div class="player"><div class="player-icn"><i class="fas fa-play"></i></div></div>
+            <div class="player"><div class="player-icn"><i class="icon iconfont icon-play"></i></div></div>
           </figure>
-        </div>-->
+        </div>
+        <div class="col-sm-3 mb-3 video">
+          <figure class="figure">
+            <video id="v1" class="video-js" width="100%" height="auto"
+              poster="http://oy02t7ssb.bkt.clouddn.com/v2_processing.jpeg">
+              <source src="http://oy02t7ssb.bkt.clouddn.com/v2_processing.mp4" type="video/mp4">
+              <source src="http://oy02t7ssb.bkt.clouddn.com/v2_processing.ogg" type="video/ogg">
+            </video>
+            <figcaption class="figure-caption text-center">Processing编程动态图像设计-2</figcaption>
+            <div class="player"><div class="player-icn"><i class="icon iconfont icon-play"></i></div></div>
+          </figure>
+        </div>
+        <div class="col-sm-3 mb-3 video">
+          <figure class="figure">
+            <video id="v2" class="video-js" width="100%" height="auto"
+              poster="http://oy02t7ssb.bkt.clouddn.com/v3_ae.jpeg">
+              <source src="http://oy02t7ssb.bkt.clouddn.com/v3_ae.mp4" type="video/mp4">
+              <source src="http://oy02t7ssb.bkt.clouddn.com/v3_ae.ogg" type="video/ogg">
+            </video>
+            <figcaption class="figure-caption text-center">AE动效设计</figcaption>
+            <div class="player"><div class="player-icn"><i class="icon iconfont icon-play"></i></div></div>
+          </figure>
+        </div>
       </div>
     </section>
     <footer class="footer">
@@ -118,7 +145,6 @@
   <script src="http://oy02t7ssb.bkt.clouddn.com/js/bootstrap.min.js"></script>
   <script type="text/javascript">
   (function () {
-    $('.carousel').carousel()
     var videos = [{
       mp4: 'http://oy02t7ssb.bkt.clouddn.com/v1_processing.mp4',
       ogg: 'http://oy02t7ssb.bkt.clouddn.com/v1_processing.ogg',
@@ -133,43 +159,31 @@
       poster: 'http://oy02t7ssb.bkt.clouddn.com/v3_ae.jpeg'
     }]
     $('.player').on('click', function (e) {
-      $('#fullscreen').show();
-      $(document.body).css({overflow:'hidden'});
       var $target = $(e.currentTarget);
       var $parent = $target.closest('.video');
-      var sources = videos[$parent.index()];
-      console.log(sources);
-      var str = [];
-      if (/Safari\//.test(navigator.userAgent)) {
-        str.push('<video class="video-js" id="my-video" controls="controls" autoplay="autoplay" style="width:100%;height:100%;" src="' + sources.mp4 + '">');
-        str.push('</video>');
+      if ($target.data('state') === 'playing') {
+        console.log('pause');
+        $target.data('state', 'pause');
+        $('#v' + $parent.index()).get(0).pause();
+        $target.find('i').removeClass('icon-pause').addClass('icon-play');
       } else {
-        str.push('<video class="video-js" id="my-video" controls="controls" autoplay="autoplay" style="width:100%;height:100%;">');
-        str.push('<source id="my-video-mp4" src="' + sources.mp4 + '" type="video/mp4"></source>');
-        str.push('<source id="my-video-mp4" src="' + sources.ogg + '" type="video/mp4"></source>');
-        str.push('</video>');
+        console.log('play');
+        $target.data('state', 'playing');
+        $('#v' + $parent.index()).get(0).play();
+        $target.find('i').removeClass('icon-play').addClass('icon-pause');
       }
-      $('#fullscreen .box').html(str.join(''));
-      // $('#my-video-mp4').attr('src', sources.mp4);
-      // $('#my-video-ogg').attr('src', sources.ogg);
-      // var player = videojs('my-video', {
-      //   poster: sources.poster,
-      //   sources: [{
-      //     src: sources.mp4,
-      //     type: 'video/mp4'
-      //   }, {
-      //     src: sources.ogg,
-      //     type: 'video/ogg'
-      //   }]
-      // }, function onPlayerReady() {
-      //   this.addClass('video');
-      //   this.play();
-      // });
     });
-    $('#fullscreen .cls').on('click', function (e) {
-      $('#fullscreen').hide();
-      $(document.body).css({overflow:'auto'});
-    });
+    ['v0', 'v1', 'v2'].forEach(function (item) {
+      $('#' + item).on('ended', function (e) {
+        var $video = $(e.target);
+        if ($video.get(0).ended) {
+          console.log('play ended');
+          var $target = $video.parent().find('.player');
+          $target.data('state', 'pause');
+          $target.find('i').removeClass('icon-pause').addClass('icon-play');
+        }
+      })
+    })
   })();
   </script>
 </body>
