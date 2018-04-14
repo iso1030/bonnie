@@ -1,16 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>POWER-UP - Bonnie's Home</title>
+  <meta charset="utf-8">
+  <title>sodesign</title>
+  <meta name="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="Bonnie">
+  <meta name="description" content="Bonnie's personal website">
+  <meta name="keywords" content="bonnie">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="stylesheet" href="http://oy02t7ssb.bkt.clouddn.com/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://oy02t7ssb.bkt.clouddn.com/css/video-js.css">
+  <link rel="stylesheet" href="./css/style.css?v=3">
 </head>
-<body style="background:#000;">
-<div style="width:90%;margin:0 auto;">
-  <video width="100%" height="100%" controls="controls" autobuffer>
-    <source src="http://oy02t7ssb.bkt.clouddn.com/power-up.mp4?v=1804081534" type="video/mp4"></source>
-    <source src="http://oy02t7ssb.bkt.clouddn.com/power-up.ogg?v=1804081534" type="video/ogg"></source>
-    您的浏览器可能不支持播放该视频    
-  </video>
-</div>
+<body class="bonnie">
+  <div class="container">
+    <header class="header">
+      <nav class="row nav">
+        <div class="col-2 col-lg-1"><a href="/" class="active">作品</a></div>
+        <div class="col-2 col-lg-1"><a href="/about.html">关于</a></div>
+        <h1 class="col-8 col-lg-10 logo"><a href="/">寿 芳波</a></h1>
+      </nav>
+    </header>
+    <section class="works" style="margin-top:50px;">
+      <video id="v-powerup" class="video-js vjs-default-skin">
+      </video>
+    </section>
+    <footer class="footer">
+      <div class="row">
+        <div class="col-sm">&copy; Fangbo Shou 2018</div>
+        <div class="col-sm text-right">
+          <a href="mailto:bonnieso@163.com"><i class="icon iconfont icon-mail"></i></a>
+          <a href="#"><i class="icon iconfont icon-facebook"></i></a>
+          <a href="#"><i class="icon iconfont icon-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="http://oy02t7ssb.bkt.clouddn.com/js/jquery-3.3.1.slim.min.js"></script>
+  <script src="http://oy02t7ssb.bkt.clouddn.com/js/video.js"></script>
+  <script type="text/javascript">
+  (function () {
+    var width = $('.container').width();
+    videojs(document.getElementById('v-powerup'), {
+      width: width + 'px',
+      controls: true,
+      sources: [{
+        src: 'http://oy02t7ssb.bkt.clouddn.com/power-up.mp4?v=1804081534',
+        type: 'video/mp4'
+      }, {
+        src: 'http://oy02t7ssb.bkt.clouddn.com/power-up.ogg?v=1804081534',
+        type: 'video/ogg'
+      }],
+      poster: 'http://oy02t7ssb.bkt.clouddn.com/images/powerup.jpeg?v=1'
+    });
+  })();
+  </script>
 </body>
 </html>

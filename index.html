@@ -9,8 +9,8 @@
   <meta name="keywords" content="bonnie">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" href="./favicon.ico">
-  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="http://oy02t7ssb.bkt.clouddn.com/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://oy02t7ssb.bkt.clouddn.com/css/video-js.css">
   <link rel="stylesheet" href="./css/style.css?v=3">
 </head>
 <body class="bonnie">
@@ -19,8 +19,7 @@
       <nav class="row nav">
         <div class="col-2 col-lg-1"><a href="/" class="active">作品</a></div>
         <div class="col-2 col-lg-1"><a href="/about.html">关于</a></div>
-        <!-- <div class="col-2 col-lg-1"><a href="/contact.html">联系</a></div> -->
-        <h1 class="col-6 col-lg-9 logo"><a href="/">寿 芳波</a></h1>
+        <h1 class="col-8 col-lg-10 logo"><a href="/">寿 芳波</a></h1>
       </nav>
     </header>
     <!--
@@ -46,19 +45,17 @@
     </section>-->
     <section class="videos">
       <div class="row">
-        <div class="col-12 col-lg-6 mb-3 video">
+        <div class="col-12 col-lg-6 video">
           <figure class="figure">
-            <video class="video-js" width="100%" height="auto"
-              controls="controls" autobuffer>
+            <video id="v-powerup" class="video-js vjs-default-skin">
               <source src="http://oy02t7ssb.bkt.clouddn.com/power-up.mp4?v=1804081534" type="video/mp4">
               <source src="http://oy02t7ssb.bkt.clouddn.com/power-up.ogg?v=1804081534" type="video/ogg">
             </video>
           </figure>
         </div>
-        <div class="col-12 col-lg-6 mb-3 video">
+        <div class="col-12 col-lg-6 video">
           <figure class="figure">
-            <video class="video-js" width="100%" height="auto"
-              controls="controls" autobuffer>
+            <video id="v-chilies" class="video-js vjs-default-skin">
               <source src="http://oy02t7ssb.bkt.clouddn.com/chilies.mp4?v=1804081534" type="video/mp4">
               <source src="http://oy02t7ssb.bkt.clouddn.com/chilies.ogg?v=1804081534" type="video/ogg">
             </video>
@@ -92,7 +89,7 @@
         </div>-->
         <div class="col-sm-3 mb-3 video">
           <figure class="figure">
-            <video id="v0" class="video-js" width="100%" height="auto"
+            <video id="v0" class="v" width="100%" height="auto"
               poster="http://oy02t7ssb.bkt.clouddn.com/v1_processing.jpeg">
               <source src="http://oy02t7ssb.bkt.clouddn.com/v1_processing.mp4" type="video/mp4">
               <source src="http://oy02t7ssb.bkt.clouddn.com/v1_processing.ogg" type="video/ogg">
@@ -103,7 +100,7 @@
         </div>
         <div class="col-sm-3 mb-3 video">
           <figure class="figure">
-            <video id="v1" class="video-js" width="100%" height="auto"
+            <video id="v1" class="v" width="100%" height="auto"
               poster="http://oy02t7ssb.bkt.clouddn.com/v2_processing.jpeg">
               <source src="http://oy02t7ssb.bkt.clouddn.com/v2_processing.mp4" type="video/mp4">
               <source src="http://oy02t7ssb.bkt.clouddn.com/v2_processing.ogg" type="video/ogg">
@@ -114,7 +111,7 @@
         </div>
         <div class="col-sm-3 mb-3 video">
           <figure class="figure">
-            <video id="v2" class="video-js" width="100%" height="auto"
+            <video id="v2" class="v" width="100%" height="auto"
               poster="http://oy02t7ssb.bkt.clouddn.com/v3_ae.jpeg">
               <source src="http://oy02t7ssb.bkt.clouddn.com/v3_ae.mp4" type="video/mp4">
               <source src="http://oy02t7ssb.bkt.clouddn.com/v3_ae.ogg" type="video/ogg">
@@ -143,6 +140,7 @@
   </section>
   <script src="http://oy02t7ssb.bkt.clouddn.com/js/jquery-3.3.1.slim.min.js"></script>
   <script src="http://oy02t7ssb.bkt.clouddn.com/js/bootstrap.min.js"></script>
+  <script src="http://oy02t7ssb.bkt.clouddn.com/js/video.js"></script>
   <script type="text/javascript">
   (function () {
     var videos = [{
@@ -158,6 +156,8 @@
       ogg: 'http://oy02t7ssb.bkt.clouddn.com/v3_ae.ogg',
       poster: 'http://oy02t7ssb.bkt.clouddn.com/v3_ae.jpeg'
     }]
+    var vPowerup = videojs(document.getElementById('v-powerup'), { width: '470px', controls: true });
+    var vChilies = videojs(document.getElementById('v-chilies'), { width: '470px', controls: true });
     $('.player').on('click', function (e) {
       var $target = $(e.currentTarget);
       var $parent = $target.closest('.video');
