@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>sodesign</title>
+  <meta name="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="Bonnie">
+  <meta name="description" content="Bonnie's personal website">
+  <meta name="keywords" content="bonnie">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="stylesheet" href="http://oy02t7ssb.bkt.clouddn.com/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/video-js.css?v=2147">
+  <link rel="stylesheet" href="./css/style.css?v=2147">
+</head>
+<body class="bonnie" style="background:#000;">
+  <div id="container" style="width:80%;margin:0 auto;">
+    <video id="v-powerup" class="video-js vjs-default-skin">
+    </video>
+  </div>
+  <script src="http://oy02t7ssb.bkt.clouddn.com/js/jquery-3.3.1.min.js"></script>
+  <script src="./js/video.js?2147"></script>
+  <script type="text/javascript">
+  (function () {
+    var width = $('#container').width();
+    videojs(document.getElementById('v-powerup'), {
+      width: width + 'px',
+      controls: true,
+      sources: [{
+        src: 'http://oy02t7ssb.bkt.clouddn.com/stramge-fungi.mp4?v=1804081534',
+        type: 'video/mp4'
+      }, {
+        src: 'http://oy02t7ssb.bkt.clouddn.com/stramge-fungi.ogg?v=1804081534',
+        type: 'video/ogg'
+      }],
+      // poster: 'http://oy02t7ssb.bkt.clouddn.com/images/powerup.jpeg?v=1'
+    });
+  })();
+  </script>
+</body>
+</html>
