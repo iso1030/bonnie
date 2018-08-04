@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="./css/style.css?v=2147">
 </head>
 <body class="bonnie" style="background:#000;">
-  <div id="container" style="width:80%;margin:100px auto;">
+  <div id="container" style="width:80%;margin:auto;">
     <video id="v-powerup" class="video-js vjs-default-skin">
     </video>
   </div>
@@ -35,6 +35,10 @@
       }],
       // poster: 'http://oy02t7ssb.bkt.clouddn.com/images/powerup.jpeg?v=1'
     });
+    var $container = $('#container');
+    var h1 = $(window).height();
+    var h2 = $container.height();
+    $container.css('marginTop', (h1 - h2) / 2);
   })();
   </script>
 </body>
