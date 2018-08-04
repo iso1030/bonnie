@@ -35,6 +35,13 @@
           <video id="v-chilies" class="video-js vjs-default-skin"></video>
         </figure>
       </section>
+      <!-- stramge fungi -->
+      <section id="s-stramge" class="animation">
+        <figure class="figure">
+          <figcaption class="figure-caption"><a href="./s.html">stramge fungi</a></figcaption>
+          <video id="v-chilies" class="video-js vjs-default-skin"></video>
+        </figure>
+      </section>
       <!-- 动效作品列表 -->
       <section id="s-gallery" class="gallery">
         <div class="row">
@@ -141,6 +148,18 @@ $(function() {
       type: 'video/mp4'
     }, {
       src: 'http://oy02t7ssb.bkt.clouddn.com/chilies.ogg?v=1804081534',
+      type: 'video/ogg'
+    }],
+    // poster: 'http://oy02t7ssb.bkt.clouddn.com/images/powerup.jpeg?v=1'
+  });
+  var vStramge = videojs(document.getElementById('s-stramge'), {
+    width: width + 'px',
+    controls: true,
+    sources: [{
+      src: 'http://oy02t7ssb.bkt.clouddn.com/stramge-fungi.mp4?v=1804081534',
+      type: 'video/mp4'
+    }, {
+      src: 'http://oy02t7ssb.bkt.clouddn.com/stramge-fungi.ogg?v=1804081534',
       type: 'video/ogg'
     }],
     // poster: 'http://oy02t7ssb.bkt.clouddn.com/images/powerup.jpeg?v=1'
